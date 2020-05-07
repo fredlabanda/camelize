@@ -1,11 +1,12 @@
 {
   "name": "cdr-camelize",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Convert object into camelCase",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "build": "tsc",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -22,7 +23,6 @@
   },
   "homepage": "https://github.com/fredlabanda/cdr-camelize#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1"
+    "typescript": "^3.8.3"
   }
 }
